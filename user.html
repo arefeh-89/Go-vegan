@@ -15,11 +15,11 @@
   <!-- <link rel="" sizes="180x180" href=""> -->
   <link href=".\statics\assets\favicon.ico" rel="icon">
 
-  <title>Login</title>  
-  <link href=".\statics\main.3f6952e4.css" rel="stylesheet"></head>
-  <link href=".\statics\Login.css" rel="stylesheet"></head>
+  <title>About us</title>  
 
-<body >
+<link href=".\statics\main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
@@ -27,7 +27,7 @@
  <!-- Add your content of header -->
 <header>
   <nav class="navbar  navbar-fixed-top navbar-default">
-    <div class="container">
+    <div class="container" >
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -42,57 +42,65 @@
           <li><a href="#" title="">Gallery</a></li>
           <li><a href="./about.html" title="">About us</a></li>
           <li><a href="./contact.html" title="">Contact</a></li>
+          <!-- <li><a href="./components.html" title="">Components</a></li> -->
         </ul>
+
+
       </div> 
     </div>
   </nav>
 </header>
+
 <div class="section-container">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
           <div class="section-container-spacer text-center">
-            <h1 class="h2"></h1>
+            <h1 class="h2">Welcome dear {username}!</h1>
           </div>
-        </div> 
+          
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <div class="container-2">
+                    <h2>How long have you been vegan?</h2>
+                    <form>
+                      <div class="form-group">
+                        <input name="days" type="date" class="form-control" id="subject" placeholder="Please the date you have been vegan since then!">
+                      </div><br>
+                      <button type="submit" class="btn btn-home btn-default btn-lg shadow">Send</button>
+                    </form><br>
+                    <h2>Would you like to share your reciepies with us?</h2>
+                    <form>
+                      <div class="form-group">
+                        <textarea name="recipe" class="form-control" rows="5" placeholder="Enter your recipes"></textarea>
+                      </div><br>
+                      <button type="submit" class="btn btn-home btn-default btn-lg shadow">Send</button>
+                    </form><br>
+                    <h2>Would you like to share your meals photos with us?</h2>
+                    <form>
+                      <div class="form-group">
+                        <input type="file" id="myfile" name="filename">
+                      </div><br>
+                      <button type="submit" class="btn btn-home btn-default btn-lg shadow">Send</button>
+                    </form><br>
+
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <img src="images/cow.png" class="img-responsive img-transition" alt="image-1" height="350px" width="350px">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+       </div>
       </div>
-    </div> 
+    </div>
   </div>
-  <div class="container1" id="container">
-    <div class="form-container sign-up-container">
-      <form action="#">
-        <h1>Create Account</h1>
-        <span>or use your email for registration</span>
-        <input type="text" placeholder="Name" name="usrname" required />
-        <input type="email" placeholder="Email" name="email" required/>
-        <input type="password" placeholder="Password" name="password" required />
-        <button>Sign Up</button>
-      </form>
-    </div>
-    <div class="form-container sign-in-container">
-      <form action="./user.html">
-        <h1>Sign in</h1>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <a href="./resetpass.html">Forgot your password?</a>
-        <button type="submit">Sign In</button>
-      </form>
-    </div>
-    <div class="overlay-container">
-      <div class="overlay">
-        <div class="overlay-panel overlay-left">
-          <h1 >Welcome Back!</h1>
-          <p>To keep connected with us please login with your personal info</p>
-          <button class="ghost" id="signIn">Sign In</button>
-        </div>
-        <div class="overlay-panel overlay-right">
-          <h1>Hello, Friend!</h1>
-          <p>Enter your personal details and start journey with us</p>
-          <button class="ghost" id="signUp">Sign Up</button>
-        </div>
-      </div>
-    </div>
-   </div>
+
 
 <footer class="footer-container text-center">
   <div class="container">
@@ -123,9 +131,6 @@
   ga('send', 'pageview');
 </script>
 
---> 
-<script type="text/javascript" src=".\statics\main.70a66962.js"></script>
-<script type="text/javascript" src=".\statics\Login.js"></script>
-</body>
+--> <script type="text/javascript" src=".\statics\main.70a66962.js"></script></body>
 
 </html>
